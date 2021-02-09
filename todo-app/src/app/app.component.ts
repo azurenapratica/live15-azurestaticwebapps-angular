@@ -17,9 +17,9 @@ export class AppComponent implements OnInit,  OnDestroy {
   title = 'angular-nodejs-example';
 
   todoForm = new FormGroup({
-    task: new FormControl('', Validators.nullValidator && Validators.required),
-    assignee: new FormControl('', Validators.nullValidator && Validators.required),
-    status: new FormControl('', Validators.nullValidator && Validators.required)
+    nome: new FormControl('', Validators.nullValidator && Validators.required),
+    email: new FormControl('', Validators.nullValidator && Validators.required),
+    descricao: new FormControl('', Validators.nullValidator && Validators.required)
   });
 
   tasks: any[] = [];

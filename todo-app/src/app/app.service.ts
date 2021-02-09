@@ -15,6 +15,7 @@ export class AppService {
   }
 
   addTask(task: any) {
+    console.log(task);
     return this.http.post(this.rootURL + '/chamados', {task});
   }
 }
